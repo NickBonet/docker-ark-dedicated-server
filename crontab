@@ -7,7 +7,7 @@
 # |  |  |  |  | 
 # *  *  *  *  *  user command to be executed 
 # Example : update every hour
-10 0 * * * /home/steam/steamenv.sh; arkmanager update
+0 * * * * /home/steam/steamenv.sh; arkmanager update --update-mods --downloadonly --backup
 # Example : backup every 15min
 */15 * * * * /home/steam/steamenv.sh; arkmanager backup
 # Example : backup every day at midnight

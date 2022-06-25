@@ -7,7 +7,7 @@ case "$cmd" in
 		arkmanager upgrade-tools
 		;;
 	"update")
-		arkmanager update
+		arkmanager update --update-mods --downloadonly --backup
 		;;
 	"updatemods")
 		arkmanager update --update-mods
