@@ -7,10 +7,10 @@
 # |  |  |  |  | 
 # *  *  *  *  *  user command to be executed 
 # Example : update every hour
-0 * * * * /home/steam/steamenv.sh; arkmanager update --update-mods --downloadonly --backup
+0 * * * * /home/steam/steamenv.sh; arkmanager update --update-mods --downloadonly --backup >> /ark/log/crontab.log 2>&1
 # Example : backup every 15min
-*/15 * * * * /home/steam/steamenv.sh; arkmanager backup
+*/15 * * * * /home/steam/steamenv.sh; arkmanager backup >> /ark/log/crontab.log 2>&1
 # Example : backup every day at midnight
-0 0 * * * /home/steam/steamenv.sh; arkmanager backup
+0 0 * * * /home/steam/steamenv.sh; arkmanager backup >> /ark/log/crontab.log 2>&1
 # WARNING : the container timezone is maybe not your current timezone
 #           You can sync them with option -v /etc/localtime:/etc/localtime:ro or -e "TZ=UTC"
